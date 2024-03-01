@@ -116,7 +116,7 @@ def process_folder(current_root_path, target_path, IS_AF=True):
 
 if __name__=='__main__':
 
-    source_root_path = r"C:\Users\86156\Desktop\program\Git"
+    source_root_path = r"D:\SODdatasets"
     target_root_path= r'C:\Users\86156\Desktop\program\Git\test'
 
     for dataset_name in Datasets_name:
