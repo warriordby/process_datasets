@@ -14,6 +14,7 @@ import numpy as np
 
 
 Datasets_name=("DUTLF-FS\TestSet", "DUTLF-FS\TrainingSet", "LFSD", "Lytro Illum", "HFUT-Lytro")
+
 FS_dir=('focalstack', 'Focal stack', 'Focal_stack','Focus_stack')
 AF_dir=('allfocus', 'All-in-focus', 'all-in-focus')
 GT_dir=('GT', 'GT(all-in-focus)', 'GT(center-view)')
@@ -95,6 +96,7 @@ def process_path(current_root_path, target_path):
             else:
                 process_path(current_filepath, target_path)
 
+
 #对对GT、FS文件夹分别处理
 def process_folder(current_root_path, target_path, IS_AF=True):
         f=os.listdir(current_root_path)
@@ -114,9 +116,10 @@ def process_folder(current_root_path, target_path, IS_AF=True):
                 else:
                     continue
 
+
 if __name__=='__main__':
 
-    source_root_path = r"D:\SODdatasets"
+    source_root_path = r"C:\Users\86156\Desktop\program\Git"
     target_root_path= r'C:\Users\86156\Desktop\program\Git\test'
 
     for dataset_name in Datasets_name:
